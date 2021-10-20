@@ -13,7 +13,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          بوموری هادی
+          بوموری ادریس
         </h1>
 
         <p className={styles.description}>
