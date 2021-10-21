@@ -3,7 +3,7 @@ import Head from "next/Head";
 const Header = () => {
     return (
         <>
-            home page 
+            home page
         </>
     );
 }
