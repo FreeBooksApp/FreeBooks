@@ -21,7 +21,7 @@ const Header = () => {
             </Head>
             <header id="header">
                 <div className="strip d-flex justify-content-between px-3 py-1 bg-light">
-                    <p className="font-size-12 text-black-50 m-0">مه میگم بخیر یا تو بموری یا مه</p>
+                    <p className="font-size-12 text-black-50 m-0">freebooks team</p>
                     <div>
                         <a href="#" className="px-3 border-left text-dark">Login</a>
                     </div>
