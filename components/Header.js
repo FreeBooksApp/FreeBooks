@@ -11,7 +11,7 @@ const Header = () => {
                 <title>FreeBooks</title>
                 //bootstrap
                 <link rel="stylesheet" href="css/bootstrap.min.css" />
-                //icons
+                //iconst
 
                 //owl carousel
                 <link rel="stylesheet" href="css/owl.carousel.min.css" />

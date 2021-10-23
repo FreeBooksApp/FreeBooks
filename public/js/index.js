@@ -4,28 +4,43 @@ $(document).ready(function(){
         autoplay: true,
         loop: true,
         dots:false,
-        items: 1,
-        hight: 600
+        items: 1
     });
 
-    // top sale carousel
+    //next books carousel
 
-    // $("#top-sale .owl-carousel").owlCarousel({
-    //     loop:true,
-    //     nav:true,
-    //     dots:false,
-    //     responsive:{
-    //         0:{
-    //             items:1
-    //         },
-    //         600:{
-    //             items:3
-    //         },
-    //         1000:{
-    //             items:5
-    //         }
-    //     }
-    // });
+    $("#next .owl-carousel").owlCarousel({
+        autoplay: true,
+        loop:true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:4
+            }
+        }
+    });
+    $("#genre .owl-carousel").owlCarousel({
+        autoplay: true,
+        loop:true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
 
     // // isotope filter
     // var $grid = $(".grid").isotope({

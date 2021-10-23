@@ -33,7 +33,7 @@
     font-size: 18px;
     color:rgb(146, 146, 146);
     background-color: #fff;
-    border: 1px solid rgb(221, 221, 221);
+    border: 2px solid rgb(221, 221, 221);
     padding: 5px 16px;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -49,7 +49,7 @@
     background-color: rgb(91, 101, 165);
     font-size: 18px;
     padding: 5px 16px;
-    border: 2px solid #fff;
+    border: 2px solid rgb(221, 221, 221);
     border-bottom-right-radius: 20px;
     border-top-left-radius: 20px;
     transition: background-color 0.4s;
@@ -87,4 +87,93 @@ footer h4{
 }
 .subscribe-btn:hover{
     background-color: rgb(132, 139, 182);
+}
+/*______________________________________________sections_________________________________________________________*/
+section{
+  width: 100%;
+}
+.comporter{
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px 0;
+}
+#next{
+  background-color: rgb(200, 221, 214);
+}
+section h4{
+  font-size: 22pt;
+  color:rgb(40, 43, 68);
+}
+.next-book{
+  margin: 0 20px;
+}
+.next-book img{
+  width: 100%;
+  transition: 0.5s;
+}
+.next-book img:hover{
+  box-shadow: 0 16px 20px rgb(144, 197, 180);
+}
+#genre{
+  background-color: rgb(200, 221, 214);
+}
+.genre-card{
+  margin: 0 20px;
+  transition: 0.4s;
+}
+.genre-card:hover{
+  transform: translate(0, -14px);
+  box-shadow: 0 16px 20px #c3c3c3;
+}
+.genre-card img{
+  width: 100%;
+  height: 200px;
+  transition: 0.4s;
+}
+.genre-card img:hover{
+  filter: blur(1px);
+}
+.genre-card .card-footer{
+  background-color: rgb(243, 243, 243);
+}
+.genre-card h2{
+  font-size: 20pt;
+  font-weight: 200;
+}
+.random{
+  background-color: rgb(218, 235, 194);
+}
+.description h3{
+  font-size: 20pt;
+  color:rgb(246, 101, 44);
+}
+.description h1{
+  font-size: 36pt;
+  color:rgb(31, 33, 46);
+  margin: 16px 0;
+}
+.description h5{
+  font-size: 22pt;
+  font-weight: 100;
+  color:rgb(31, 33, 46);
+}
+.description p{
+  font-size: 18px;
+  color: #494949;
+  line-height: 28px;
+  margin: 40px 0;
+}
+.description a:visited,
+.description a:link{
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  color: rgb(88, 88, 88);
+  border-right: 2px solid rgb(95, 95, 95);
+  border-left: 2px solid rgb(95, 95, 95);
+  transition: 0.5s;
+}
+.description a:hover{
+  background-color: rgb(96, 192, 192);
+  padding: 10px 30px;
 }
