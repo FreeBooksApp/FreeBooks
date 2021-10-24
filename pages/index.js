@@ -3,7 +3,7 @@ function Home() {
       <main id="main-site">
          <section id="banner-area">
             <div className="banner">
-               <h1>Books made the word!</h1>
+               <h1>Books made the world!</h1>
                <p>Search through hundreds of books <br /> change your life by reading.</p>
                <div className="search-bar">
                   <input type="text" name="search" className="search" placeholder="search for books.." />
