@@ -1,16 +1,8 @@
 $(document).ready(function(){
-    // banner owl carousel
-    $("#banner-area .owl-carousel").owlCarousel({
-        autoplay: true,
-        loop: true,
-        dots:false,
-        items: 1
-    });
-
+     
     //next books carousel
 
     $("#next .owl-carousel").owlCarousel({
-        autoplay: true,
         loop:true,
         dots:false,
         responsive:{
@@ -25,9 +17,48 @@ $(document).ready(function(){
             }
         }
     });
+
+    //genre books carousel
     $("#genre .owl-carousel").owlCarousel({
         autoplay: true,
         loop:true,
+        nav: true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+
+    //top books carousel
+    $("#top .owl-carousel").owlCarousel({
+        loop:true,
+        nav: true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+
+    //most downloads books carousel
+    $("#most .owl-carousel").owlCarousel({
+        loop:true,
+        nav: true,
         dots:false,
         responsive:{
             0:{

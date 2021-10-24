@@ -1,19 +1,17 @@
-export default function Home() {
-  return (
+function Home() {
+   return (
       <main id="main-site">
          <section id="banner-area">
-            <div className="owl-carousel owl-theme">
-               <div className="item">
-                  <img src="images/banner1.jpg"/>
-               </div>
-               <div className="item">
-                  <img src="images/banner2.jpg"/>
-               </div>
-               <div className="item">
-                  <img src="images/banner3.jpg"/>
+            <div className="banner">
+               <h1>Books made the word!</h1>
+               <p>Search through hundreds of books <br /> change your life by reading.</p>
+               <div className="search-bar">
+                  <input type="text" name="search" className="search" placeholder="search for books.." />
+                  <button className="btn-search">Search</button>
                </div>
             </div>
          </section>
+
          <section id="next">
             <div className="comporter">
                <h4>Discover Your Next Book</h4>
@@ -21,16 +19,44 @@ export default function Home() {
                <div className="owl-carousel owl-theme">
                   <div className="item py-2">
                      <div className="next-book">
-                     <a href="#"><img src="images/book1.jpg" alt="book" className="img-fluid"/></a> 
-                     <div className="text-center pt-2">
-                        <h6>Daniel Trejo</h6>
-                        <h5>History of Europe</h5> 
+                        <a href="#"><img src="images/book1.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
                      </div>
+                  </div>
+                  <div className="item py-2">
+                     <div className="next-book">
+                        <a href="#"><img src="images/book2.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-2">
+                     <div className="next-book">
+                        <a href="#"><img src="images/book3.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-2">
+                     <div className="next-book">
+                        <a href="#"><img src="images/book4.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>            
-         </section>      
+            </div>
+         </section>
+
          <section id="genre">
             <div className="comporter">
                <h4>Browse Books by Genre</h4>
@@ -38,33 +64,240 @@ export default function Home() {
                <div className="owl-carousel owl-theme">
                   <div className="item py-3">
                      <div className="genre-card">
-                     <a href="#"><img src="images/book1.jpg" alt="book" className="img-fluid"/></a> 
-                     <div className="card-footer text-center">
-                        <h2>Art</h2> 
+                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="card-footer text-center">
+                           <h2>romance</h2>
+                        </div>
                      </div>
+                  </div>
+                  <div className="item py-3">
+                     <div className="genre-card">
+                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="card-footer text-center">
+                           <h2>action & adventure</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-3">
+                     <div className="genre-card">
+                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="card-footer text-center">
+                           <h2>mystery & thriller</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-3">
+                     <div className="genre-card">
+                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="card-footer text-center">
+                           <h2>biography & history</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-3">
+                     <div className="genre-card">
+                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="card-footer text-center">
+                           <h2>children</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-3">
+                     <div className="genre-card">
+                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="card-footer text-center">
+                           <h2>fantasy</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-3">
+                     <div className="genre-card">
+                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="card-footer text-center">
+                           <h2>historical</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-3">
+                     <div className="genre-card">
+                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="card-footer text-center">
+                           <h2>horror</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-3">
+                     <div className="genre-card">
+                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="card-footer text-center">
+                           <h2>literary</h2>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-3">
+                     <div className="genre-card">
+                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="card-footer text-center">
+                           <h2>science</h2>
+                        </div>
                      </div>
                   </div>
                </div>
-            </div>            
-         </section>      
+            </div>
+         </section>
+
          <section className="random">
             <div className="comporter">
-                  <div className="row">
-                     <div className="col-lg-6 col-12">
-                     <img src="images/house.jpg" alt="book" className="img-fluid"/> 
-                     </div>
-                     <div className="col-lg-6 col-12 description">
-                        <h3>George Stewart</h3> 
-                        <h1>The Man in the<br /> Glass House</h1>
-                        <h5>Philip Johnson, Architect of the Modern Century</h5>
-                        <p>We work with our partners to streamline project plans that don’t just deliver on product perfection, but also delivers on time – crucial to success in a highly competitive market where every day counts. We work with our partners to streamline project plans that don’t just deliver on product perfection, but also delivers on time.</p>
-                        <a href="#">Read Online</a>
+               <div className="row">
+                  <div className="col-lg-6 col-12">
+                     <img src="images/house.jpg" alt="book" className="img-fluid" />
+                  </div>
+                  <div className="col-lg-6 col-12 description">
+                     <h3>George Stewart</h3>
+                     <h1>The Man in the<br /> Glass House</h1>
+                     <h5>Philip Johnson, Architect of the Modern Century</h5>
+                     <p>We work with our partners to streamline project plans that don’t just deliver on product perfection, but also delivers on time – crucial to success in a highly competitive market where every day counts. We work with our partners to streamline project plans that don’t just deliver on product perfection, but also delivers on time.</p>
+                     <a href="#">Read Online</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section id="top">
+            <div className="comporter">
+               <h4>Top Books</h4>
+               <hr />
+               <div className="owl-carousel owl-theme">
+                  <div className="item py-2">
+                     <div className="top-book">
+                        <a href="#"><img src="images/book5.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
                      </div>
                   </div>
-               </div>        
-         </section>      
+                  <div className="item py-2">
+                     <div className="top-book">
+                        <a href="#"><img src="images/book6.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-2">
+                     <div className="top-book">
+                        <a href="#"><img src="images/book7.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-2">
+                     <div className="top-book">
+                        <a href="#"><img src="images/book8.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section id="most">
+            <div className="comporter">
+               <h4>Most Downloads</h4>
+               <hr />
+               <div className="owl-carousel owl-theme">
+                  <div className="item py-2">
+                     <div className="most-book">
+                        <a href="#"><img src="images/book9.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-2">
+                     <div className="most-book">
+                        <a href="#"><img src="images/book10.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-2">
+                     <div className="most-book">
+                        <a href="#"><img src="images/book11.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-2">
+                     <div className="most-book">
+                        <a href="#"><img src="images/book12.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
+                     </div>
+                  </div>
+                  <div className="item py-2">
+                     <div className="most-book">
+                        <a href="#"><img src="images/book13.jpg" alt="book" className="img-fluid" /></a>
+                        <div className="text-center pt-2">
+                           <h6>Daniel Trejo</h6>
+                           <h5>History of Europe</h5>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section className="blogs">
+            <div className="comporter">
+               <h4>Blogs</h4>
+               <hr />
+               <div className="row">
+                  <div className="col-lg-3">
+                     <img src="images/blog1.jpg" alt="blog" className="img-fluid" />
+                     <div className="pt-2">
+                        <a href="#"><h5>go somewhere</h5></a>
+                     </div>
+                  </div>
+                  <div className="col-lg-3">
+                     <img src="images/blog2.jpg" alt="blog" className="img-fluid" />
+                     <div className="pt-2">
+                        <a href="#"><h5>go somewhere</h5></a>
+                     </div>
+                  </div>
+                  <div className="col-lg-3">
+                     <img src="images/blog3.jpg" alt="blog" className="img-fluid" />
+                     <div className="pt-2">
+                        <a href="#"><h5>go somewhere</h5></a>
+                     </div>
+                  </div>
+                  <div className="col-lg-3">
+                     <img src="images/blog4.jpg" alt="blog" className="img-fluid" />
+                     <div className="pt-2">
+                        <a href="#"><h5>go somewhere</h5></a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
       </main>
-  )
+   )
 }
-                   
-                   
+
+export default Home;
+

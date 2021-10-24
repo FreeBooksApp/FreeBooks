@@ -21,7 +21,7 @@ const Header = () => {
             </Head>
             <header id="header">
                 <div className="strip d-flex justify-content-between px-3 py-1 bg-light">
-                    <p className="font-size-12 text-black-50 m-0">freebooks team</p>
+                    <p>M.Edriss Aria Herat city +93783261610</p>
                     <div>
                         <a href="#" className="px-3 border-left text-dark">Login</a>
                     </div>
@@ -30,7 +30,7 @@ const Header = () => {
                     <a href="#" className="navbar-brand text-info">
                     <Image src="/images/logo.png" width="40" height="40"/>
                     </a>
-                    <div className="collapse navbar-collapse">
+                    <div className="collapse navbar-collapse" id="afg">
                         <ul className="navbar-nav m-auto">
                             <li className="navbar-item">
                                 <a className="nav-link active" href="#">HOME</a>
@@ -51,10 +51,6 @@ const Header = () => {
                                 <a className="nav-link" href="#">COMMING SOON</a>
                             </li>
                         </ul>
-                        <form>
-                            <input type="text" name="search" className="search" placeholder="search for books.." />
-                            <button type="submit" className="btn-search">Search</button>
-                        </form>
                     </div>
                 </nav>
             </header>

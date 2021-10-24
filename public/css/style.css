@@ -8,6 +8,15 @@
   #header{
     background-color: rgb(91, 101, 165);
   }
+  .strip p{
+    font-size: 12px;
+    margin: 0;
+    color:rgb(70, 70, 70);
+  }
+  .strip a{
+    font-size: 16px;
+    margin: 0;
+  }
   nav.navbar-expand-lg{
     padding: 0 16px;
   } 
@@ -28,66 +37,58 @@
     padding-bottom: 14px;
     border-bottom: 2px solid rgb(255, 255, 255);
   }
+  .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/banner.jpg');
+    background-position: center;
+    background-size: cover;
+  }
+  .banner h1{
+    font-size: 60pt;
+    color:rgb(238, 238, 238);
+    padding: 0 20px;
+  }
+  .banner p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    line-height: 30px;
+    font-weight: 200;
+  }
+  .search-bar{
+    margin-top: 10px;
+  }
   .search{
-    width: 300px;
+    width: 320px;
     font-size: 18px;
     color:rgb(146, 146, 146);
     background-color: #fff;
-    border: 2px solid rgb(221, 221, 221);
-    padding: 5px 16px;
+    border: none;
+    padding: 8px 16px;
     border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     transition: all 0.4s;
   }
   .search::placeholder{
     color:rgb(167, 167, 167);
   }
   .btn-search{
-    position: absolute;
     right: 15px;
     color:rgb(255, 255, 255);
     background-color: rgb(91, 101, 165);
     font-size: 18px;
-    padding: 5px 16px;
-    border: 2px solid rgb(221, 221, 221);
+    padding: 8px 16px;
+    border: none;
     border-bottom-right-radius: 20px;
-    border-top-left-radius: 20px;
     transition: background-color 0.4s;
   }
   .btn-search:hover{
     background-color: rgb(123, 128, 167);
   }
-/*_________________________________________footer_______________________________________________________*/
-footer{
-    background-color: rgb(31, 33, 46);
-}
-footer h4{
-    color:rgb(91, 101, 165);
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-.subscribe{
-    position: relative;
-    font-size: 18px;
-    width: 300px;
-    padding: 5px 20px;
-    border: 2px solid rgb(226, 224, 221);
-    border-radius: 20px;
-}
-.subscribe-btn{
-    position: absolute;
-    right: 30px;
-    background-color: rgb(91, 101, 165);
-    color:rgb(223, 223, 223);
-    font-size: 18px;
-    padding: 5px 20px;
-    border: 2px solid rgb(226, 224, 221);
-    border-radius: 20px;
-    transition: background-color 0.4s;
-}
-.subscribe-btn:hover{
-    background-color: rgb(132, 139, 182);
-}
 /*______________________________________________sections_________________________________________________________*/
 section{
   width: 100%;
@@ -109,10 +110,11 @@ section h4{
 }
 .next-book img{
   width: 100%;
+  height: 24rem;
   transition: 0.5s;
 }
 .next-book img:hover{
-  box-shadow: 0 16px 20px rgb(144, 197, 180);
+  box-shadow: 0 26px 30px rgb(144, 197, 180);
 }
 #genre{
   background-color: rgb(200, 221, 214);
@@ -137,8 +139,9 @@ section h4{
   background-color: rgb(243, 243, 243);
 }
 .genre-card h2{
-  font-size: 20pt;
+  font-size: 12pt;
   font-weight: 200;
+  text-transform: uppercase;
 }
 .random{
   background-color: rgb(218, 235, 194);
@@ -176,4 +179,124 @@ section h4{
 .description a:hover{
   background-color: rgb(96, 192, 192);
   padding: 10px 30px;
+}
+#top{
+  background-color: rgb(200, 221, 214);
+}
+.top-book{
+  margin: 0 14px;
+}
+.top-book img{
+  width: 100%;
+  height: 22rem;
+  transition: 0.4s;
+}
+.top-book img:hover{
+  transform: scale(1.03);
+}
+#most{
+  background-color: rgb(200, 221, 214);
+}
+.most-book{
+  margin: 0 14px;
+}
+.most-book img{
+  width: 100%;
+  height: 20rem;
+  transition: 0.4s;
+}
+.most-book img:hover{
+  transform: translate(0, 10px);
+}
+.blogs{
+  background-color: rgb(221, 221, 221);
+}
+.blogs img{
+  width: 100%;
+  height: 12rem;
+  transition: 0.5s;
+}
+.blogs img:hover{
+  filter: sepia(40%);
+}
+.blogs h5{
+  font-size: 22px;
+  color:rgb(40, 43, 68);
+  border-left: 1px solid rgb(73, 73, 73);
+  padding: 5px 10px;
+  transition: 0.5s;
+}
+.blogs h5:hover{
+  background-color: rgb(40, 43, 68);
+  padding: 5px 20px;
+  color: rgb(226, 226, 226);
+  border-left: 1px solid rgb(226, 226, 226);
+}
+.blogs a{
+  text-decoration: none;
+}
+/* carousel buttons */
+#genre .owl-carousel .owl-nav button,
+#top .owl-carousel .owl-nav button,
+#most .owl-carousel .owl-nav button{
+  position: absolute;
+  top: 30%;
+  outline: none;
+}
+#genre .owl-carousel .owl-nav button.owl-prev,
+#top .owl-carousel .owl-nav button.owl-prev,
+#most .owl-carousel .owl-nav button.owl-prev{
+  left: 0;
+}
+#genre .owl-carousel .owl-nav button.owl-prev span,
+#top .owl-carousel .owl-nav button.owl-prev span,
+#most .owl-carousel .owl-nav button.owl-prev span{
+  font-size: 35px;
+  color: #003859;
+  margin-left: -4rem;
+  padding: 0 1rem;
+}
+#genre .owl-carousel .owl-nav button.owl-next,
+#top .owl-carousel .owl-nav button.owl-next,
+#most .owl-carousel .owl-nav button.owl-next{
+  right: 0;
+}
+#genre .owl-carousel .owl-nav button.owl-next span,
+#top .owl-carousel .owl-nav button.owl-next span,
+#most .owl-carousel .owl-nav button.owl-next span{
+  font-size: 35px;
+  color: #003859;
+  margin-right: -4rem;
+  padding: 0 1rem;
+}
+/*_________________________________________footer_______________________________________________________*/
+footer{
+  background-color: rgb(31, 33, 46);
+}
+footer h4{
+  color:rgb(91, 101, 165);
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.subscribe{
+  position: relative;
+  font-size: 18px;
+  width: 300px;
+  padding: 5px 20px;
+  border: 2px solid rgb(226, 224, 221);
+  border-radius: 20px;
+}
+.subscribe-btn{
+  position: absolute;
+  right: 30px;
+  background-color: rgb(91, 101, 165);
+  color:rgb(223, 223, 223);
+  font-size: 18px;
+  padding: 5px 20px;
+  border: 2px solid rgb(226, 224, 221);
+  border-radius: 20px;
+  transition: background-color 0.4s;
+}
+.subscribe-btn:hover{
+  background-color: rgb(132, 139, 182);
 }
