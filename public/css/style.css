@@ -136,7 +136,8 @@ section h4{
   filter: blur(1px);
 }
 .genre-card .card-footer{
-  background-color: rgb(243, 243, 243);
+  background-color: rgba(90, 58, 231, 0.883);
+  color: rgb(248, 248, 248);
 }
 .genre-card h2{
   font-size: 12pt;
@@ -144,7 +145,7 @@ section h4{
   text-transform: uppercase;
 }
 .random{
-  background-color: rgb(218, 235, 194);
+  background-color: rgb(165, 222, 230);
 }
 .description h3{
   font-size: 20pt;
@@ -165,20 +166,6 @@ section h4{
   color: #494949;
   line-height: 28px;
   margin: 40px 0;
-}
-.description a:visited,
-.description a:link{
-  text-decoration: none;
-  font-size: 24px;
-  padding: 10px 20px;
-  color: rgb(88, 88, 88);
-  border-right: 2px solid rgb(95, 95, 95);
-  border-left: 2px solid rgb(95, 95, 95);
-  transition: 0.5s;
-}
-.description a:hover{
-  background-color: rgb(96, 192, 192);
-  padding: 10px 30px;
 }
 #top{
   background-color: rgb(200, 221, 214);
@@ -228,7 +215,7 @@ section h4{
 }
 .blogs h5:hover{
   background-color: rgb(40, 43, 68);
-  padding: 5px 20px;
+  padding: 5px 30px;
   color: rgb(226, 226, 226);
   border-left: 1px solid rgb(226, 226, 226);
 }
@@ -269,6 +256,110 @@ section h4{
   margin-right: -4rem;
   padding: 0 1rem;
 }
+/*_________________________________________single book page_______________________________________________________*/
+.singlebook{
+  width: 100%;
+  background-color: #e5dcf3;
+}
+.singlebook h4{
+  font-size: 24px;
+  color:rgb(97, 108, 211);
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+.singlebook h1{
+  font-size: 60pt; 
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color:rgb(40, 43, 68);
+  margin-top: 20px;
+}
+.singlebook p{
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color:rgb(77, 77, 77);
+  margin-top: 20px;
+  line-height: 28px;
+}
+.singlebook h5{
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #178368;
+}
+h5 .dl-count{
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(224, 22, 73);
+}
+h5 .rev-star{
+  font-size: 24px;
+  color:rgb(96, 192, 192);
+}
+.btn-group{
+  margin-top: 20px;
+}
+.download-btn{
+  font-size: 24px;
+  text-decoration: none !important;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  color:rgb(241, 241, 241);
+  background-color: rgba(59, 172, 97, 0.863);
+  border: 2px solid rgb(35, 119, 56);
+  margin-right: 20px;
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.download-btn:hover{
+   transform: translate(0, -5px);
+   box-shadow: 0 16px 20px rgb(63, 163, 96); 
+   color: rgb(255, 255, 255);
+}
+.read-btn{
+  font-size: 24px;
+  text-decoration: none !important;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px 20px;
+  color:rgb(241, 241, 241);
+  background-color: rgba(59, 117, 172, 0.863);
+  border: 2px solid rgb(35, 85, 119);
+  border-radius: 4px;
+  transition: 0.5s;
+}
+.read-btn:hover{
+  transform: translate(0, -5px);
+  box-shadow: 0 16px 20px rgb(63, 126, 163); 
+  color: rgb(255, 255, 255);
+}
+#latest{
+  background-color: rgb(206, 197, 197);
+}
+.latest-book{
+  margin: 0 14px;
+}
+.latest-book img{
+  width: 100%;
+  height: 20rem;
+  transition: 0.4s;
+}
+.latest-book img:hover{
+  transform: translate(0, 10px);
+}
+/*_________________________________________404_______________________________________________________*/
+.notFound{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   text-align: center;
+   padding: 20px;
+   margin: 100px 0;
+}
+.notFound h1{
+  font-size: 40pt;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #5f41c0;
+}
 /*_________________________________________footer_______________________________________________________*/
 footer{
   background-color: rgb(31, 33, 46);
@@ -299,4 +390,42 @@ footer h4{
 }
 .subscribe-btn:hover{
   background-color: rgb(132, 139, 182);
+}
+/*_________________________________________Responsive_______________________________________________________*/
+/* small phones from 0 to 480px */
+@media only screen and (max-width: 480px){
+  .search{
+    width: 200px;
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+  .btn-search{
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+  .banner h1{
+    font-size: 40pt;
+  }
+  .subscribe{
+    font-size: 16px;
+    width: 200px;
+    padding: 5px 18px;
+  }
+  .subscribe-btn{
+    font-size: 16px;
+    padding: 5px 18px;
+  }
+  .download-btn{
+    font-size: 16px;
+    width: 10rem;
+    padding: 8px 16px;
+    margin-right: 10px;
+  }
+  .read-btn{
+    font-size: 16px;
+    width: 10rem;
+    padding: 8px 16px;
+    margin-right: 10px;
+  }
+
 }

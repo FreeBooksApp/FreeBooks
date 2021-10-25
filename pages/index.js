@@ -64,7 +64,7 @@ function Home() {
                <div className="owl-carousel owl-theme">
                   <div className="item py-3">
                      <div className="genre-card">
-                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <a href="#"><img src="images/romanse.png" alt="book" className="img-fluid" /></a>
                         <div className="card-footer text-center">
                            <h2>romance</h2>
                         </div>
@@ -72,7 +72,7 @@ function Home() {
                   </div>
                   <div className="item py-3">
                      <div className="genre-card">
-                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <a href="#"><img src="images/adventure.png" alt="book" className="img-fluid" /></a>
                         <div className="card-footer text-center">
                            <h2>action & adventure</h2>
                         </div>
@@ -80,7 +80,7 @@ function Home() {
                   </div>
                   <div className="item py-3">
                      <div className="genre-card">
-                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <a href="#"><img src="images/action.png" alt="book" className="img-fluid" /></a>
                         <div className="card-footer text-center">
                            <h2>mystery & thriller</h2>
                         </div>
@@ -88,7 +88,7 @@ function Home() {
                   </div>
                   <div className="item py-3">
                      <div className="genre-card">
-                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <a href="#"><img src="images/bio.png" alt="book" className="img-fluid" /></a>
                         <div className="card-footer text-center">
                            <h2>biography & history</h2>
                         </div>
@@ -96,7 +96,7 @@ function Home() {
                   </div>
                   <div className="item py-3">
                      <div className="genre-card">
-                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <a href="#"><img src="images/children.png" alt="book" className="img-fluid" /></a>
                         <div className="card-footer text-center">
                            <h2>children</h2>
                         </div>
@@ -104,7 +104,7 @@ function Home() {
                   </div>
                   <div className="item py-3">
                      <div className="genre-card">
-                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <a href="#"><img src="images/fantasy.png" alt="book" className="img-fluid" /></a>
                         <div className="card-footer text-center">
                            <h2>fantasy</h2>
                         </div>
@@ -112,7 +112,7 @@ function Home() {
                   </div>
                   <div className="item py-3">
                      <div className="genre-card">
-                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <a href="#"><img src="images/historical.png" alt="book" className="img-fluid" /></a>
                         <div className="card-footer text-center">
                            <h2>historical</h2>
                         </div>
@@ -120,7 +120,7 @@ function Home() {
                   </div>
                   <div className="item py-3">
                      <div className="genre-card">
-                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <a href="#"><img src="images/horror.png" alt="book" className="img-fluid" /></a>
                         <div className="card-footer text-center">
                            <h2>horror</h2>
                         </div>
@@ -128,7 +128,7 @@ function Home() {
                   </div>
                   <div className="item py-3">
                      <div className="genre-card">
-                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <a href="#"><img src="images/literary.png" alt="book" className="img-fluid" /></a>
                         <div className="card-footer text-center">
                            <h2>literary</h2>
                         </div>
@@ -136,7 +136,7 @@ function Home() {
                   </div>
                   <div className="item py-3">
                      <div className="genre-card">
-                        <a href="#"><img src="images/book.jpg" alt="book" className="img-fluid" /></a>
+                        <a href="#"><img src="images/science.png" alt="book" className="img-fluid" /></a>
                         <div className="card-footer text-center">
                            <h2>science</h2>
                         </div>
@@ -157,7 +157,7 @@ function Home() {
                      <h1>The Man in the<br /> Glass House</h1>
                      <h5>Philip Johnson, Architect of the Modern Century</h5>
                      <p>We work with our partners to streamline project plans that don’t just deliver on product perfection, but also delivers on time – crucial to success in a highly competitive market where every day counts. We work with our partners to streamline project plans that don’t just deliver on product perfection, but also delivers on time.</p>
-                     <a href="#">Read Online</a>
+                     <a href="#" className="read-btn">Read Online</a>
                   </div>
                </div>
             </div>
@@ -270,25 +270,25 @@ function Home() {
                   <div className="col-lg-3">
                      <img src="images/blog1.jpg" alt="blog" className="img-fluid" />
                      <div className="pt-2">
-                        <a href="#"><h5>go somewhere</h5></a>
+                        <a href="#"><h5>Go somewhere</h5></a>
                      </div>
                   </div>
                   <div className="col-lg-3">
                      <img src="images/blog2.jpg" alt="blog" className="img-fluid" />
                      <div className="pt-2">
-                        <a href="#"><h5>go somewhere</h5></a>
+                        <a href="#"><h5>Go somewhere</h5></a>
                      </div>
                   </div>
                   <div className="col-lg-3">
                      <img src="images/blog3.jpg" alt="blog" className="img-fluid" />
                      <div className="pt-2">
-                        <a href="#"><h5>go somewhere</h5></a>
+                        <a href="#"><h5>Go somewhere</h5></a>
                      </div>
                   </div>
                   <div className="col-lg-3">
                      <img src="images/blog4.jpg" alt="blog" className="img-fluid" />
                      <div className="pt-2">
-                        <a href="#"><h5>go somewhere</h5></a>
+                        <a href="#"><h5>Go somewhere</h5></a>
                      </div>
                   </div>
                </div>

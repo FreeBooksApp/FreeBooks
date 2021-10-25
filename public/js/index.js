@@ -73,6 +73,24 @@ $(document).ready(function(){
         }
     });
 
+    //latest book books carousel
+    $("#latest .owl-carousel").owlCarousel({
+        loop:true,
+        nav: true,
+        dots:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:5
+            }
+        }
+    });
+
     // // isotope filter
     // var $grid = $(".grid").isotope({
     //     itemSelector:".grid-item",
