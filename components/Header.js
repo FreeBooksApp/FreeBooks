@@ -21,10 +21,7 @@ const Header = () => {
             </Head>
             <header id="header">
                 <div className="strip d-flex justify-content-between px-3 py-1 bg-light">
-                    <p>M.Edriss Aria Herat city +93783261610</p>
-                    <div>
-                        <a href="#" className="px-3 border-left text-dark">Login</a>
-                    </div>
+                    <p>Freebooks team</p>
                 </div>
                 <nav className="navbar navbar-expand-lg">
                     <a href="#" className="navbar-brand text-info">
@@ -46,9 +43,6 @@ const Header = () => {
                             </li>
                             <li className="navbar-item">
                                 <a className="nav-link" href="#">CONTACTS</a>
-                            </li>
-                            <li className="navbar-item">
-                                <a className="nav-link" href="#">COMMING SOON</a>
                             </li>
                         </ul>
                     </div>

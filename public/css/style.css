@@ -225,19 +225,22 @@ section h4{
 /* carousel buttons */
 #genre .owl-carousel .owl-nav button,
 #top .owl-carousel .owl-nav button,
-#most .owl-carousel .owl-nav button{
+#most .owl-carousel .owl-nav button,
+#latest .owl-carousel .owl-nav button{
   position: absolute;
   top: 30%;
   outline: none;
 }
 #genre .owl-carousel .owl-nav button.owl-prev,
 #top .owl-carousel .owl-nav button.owl-prev,
-#most .owl-carousel .owl-nav button.owl-prev{
+#most .owl-carousel .owl-nav button.owl-prev,
+#latest .owl-carousel .owl-nav button.owl-prev{
   left: 0;
 }
 #genre .owl-carousel .owl-nav button.owl-prev span,
 #top .owl-carousel .owl-nav button.owl-prev span,
-#most .owl-carousel .owl-nav button.owl-prev span{
+#most .owl-carousel .owl-nav button.owl-prev span,
+#latest .owl-carousel .owl-nav button.owl-prev span{
   font-size: 35px;
   color: #003859;
   margin-left: -4rem;
@@ -245,12 +248,14 @@ section h4{
 }
 #genre .owl-carousel .owl-nav button.owl-next,
 #top .owl-carousel .owl-nav button.owl-next,
-#most .owl-carousel .owl-nav button.owl-next{
+#most .owl-carousel .owl-nav button.owl-next,
+#latest .owl-carousel .owl-nav button.owl-next{
   right: 0;
 }
 #genre .owl-carousel .owl-nav button.owl-next span,
 #top .owl-carousel .owl-nav button.owl-next span,
-#most .owl-carousel .owl-nav button.owl-next span{
+#most .owl-carousel .owl-nav button.owl-next span,
+#latest .owl-carousel .owl-nav button.owl-next span{
   font-size: 35px;
   color: #003859;
   margin-right: -4rem;
@@ -345,6 +350,34 @@ h5 .rev-star{
 .latest-book img:hover{
   transform: translate(0, 10px);
 }
+/*_________________________________________books by genre_______________________________________________________*/
+.books_genre{
+  width: 100%;
+  background-color: #ddfffc;
+}
+.books_genre .book{
+  margin-top: 20px;
+  text-align: center;
+}
+.books_genre .book img{
+  width: 100%;
+  height: 16rem;
+  transition: 0.5s;
+}
+.books_genre .book img:hover{
+  transform: scale(1.05);
+}
+.books_genre .book h6{
+  font-size: 16px;
+  margin-top: 10px;
+  color:rgb(71, 71, 71);
+}
+.books_genre .book h5{
+  font-size: 20px;
+  margin-top: 10px;
+  color:rgb(31, 33, 46);
+}
+
 /*_________________________________________404_______________________________________________________*/
 .notFound{
    display: flex;
@@ -414,7 +447,7 @@ footer h4{
   }
   .read-btn{
     font-size: 16px;
-    width: 10rem;
+    width: 8rem;
     padding: 8px 16px;
     margin-right: 10px;
   }
