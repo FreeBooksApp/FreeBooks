@@ -13,29 +13,23 @@
     margin: 0;
     color:rgb(70, 70, 70);
   }
-  .strip a{
-    font-size: 16px;
-    margin: 0;
-  }
   nav.navbar-expand-lg{
     padding: 0 16px;
   } 
   nav ul li{
-    margin: 0 8px;
+    margin: 0 16px;
   }
   nav.navbar-expand-lg ul li a:link,
   nav ul li a:visited{
+    font-size: 18px;
     color:rgba(249, 250, 250, 0.924);
     font-weight: 100;
-    padding: 16px 16px;
-    transition: background-color 0.4s;
+    transition: 0.4s;
   }
   nav.navbar-expand-lg ul li a:hover,
   nav ul li a:active{
     color:rgb(255, 255, 255);
-    background-color: rgb(132, 140, 184);
-    padding-bottom: 14px;
-    border-bottom: 2px solid rgb(255, 255, 255);
+    transform: scale(1.1);
   }
   .banner{
     display: flex;
@@ -47,18 +41,21 @@
     background-image: url('../images/banner.jpg');
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
   }
   .banner h1{
     font-size: 60pt;
     color:rgb(238, 238, 238);
     padding: 0 20px;
+    text-shadow: 0 2px 5px rgb(20, 20, 20);
   }
   .banner p{
     font-size: 20px;
+    font-family: system-ui;
     color: rgb(255, 255, 255);
     margin-top: 10px;
     line-height: 30px;
-    font-weight: 200;
+    text-shadow: 0 3px 8px rgb(20, 20, 20);
   }
   .search-bar{
     margin-top: 10px;
@@ -68,7 +65,8 @@
     font-size: 18px;
     color:rgb(146, 146, 146);
     background-color: #fff;
-    border: none;
+    border: 1px solid rgb(109, 109, 109);
+    border-right: none;
     padding: 8px 16px;
     border-top-left-radius: 20px;
     transition: all 0.4s;
@@ -82,7 +80,8 @@
     background-color: rgb(91, 101, 165);
     font-size: 18px;
     padding: 8px 16px;
-    border: none;
+    border: 1px solid rgb(109, 109, 109);
+    border-left: none;
     border-bottom-right-radius: 20px;
     transition: background-color 0.4s;
   }
@@ -98,9 +97,6 @@ section{
   margin: 0 auto;
   padding: 30px 0;
 }
-#next{
-  background-color: rgb(200, 221, 214);
-}
 section h4{
   font-size: 22pt;
   color:rgb(40, 43, 68);
@@ -111,41 +107,29 @@ section h4{
 .next-book img{
   width: 100%;
   height: 24rem;
+  box-shadow: 6px 8px 0 gray;
   transition: 0.5s;
 }
 .next-book img:hover{
   box-shadow: 0 26px 30px rgb(144, 197, 180);
 }
-#genre{
-  background-color: rgb(200, 221, 214);
+.topics{
+  background-color: rgb(235, 235, 235);
+  padding-bottom: 20px;
 }
-.genre-card{
-  margin: 0 20px;
-  transition: 0.4s;
+.topic_card{
+  background-color: rgb(96, 40, 185);
+  padding: 5px 20px;
+  border: 1px solid rgb(23, 2, 82);
+  border-radius: 5px;
 }
-.genre-card:hover{
-  transform: translate(0, -14px);
-  box-shadow: 0 16px 20px #c3c3c3;
-}
-.genre-card img{
-  width: 100%;
-  height: 200px;
-  transition: 0.4s;
-}
-.genre-card img:hover{
-  filter: blur(1px);
-}
-.genre-card .card-footer{
-  background-color: rgba(90, 58, 231, 0.883);
-  color: rgb(248, 248, 248);
-}
-.genre-card h2{
-  font-size: 12pt;
+.topic_card h4{
+  font-size: 24px;
   font-weight: 200;
-  text-transform: uppercase;
+  color:rgb(228, 228, 228);
 }
 .random{
-  background-color: rgb(165, 222, 230);
+  background-color: rgb(255, 255, 255);
 }
 .description h3{
   font-size: 20pt;
@@ -168,7 +152,7 @@ section h4{
   margin: 40px 0;
 }
 #top{
-  background-color: rgb(200, 221, 214);
+  background-color: rgb(235, 235, 235);
 }
 .top-book{
   margin: 0 14px;
@@ -176,13 +160,14 @@ section h4{
 .top-book img{
   width: 100%;
   height: 22rem;
+  box-shadow: 6px 8px 0 rgb(149, 149, 149);
   transition: 0.4s;
 }
 .top-book img:hover{
   transform: scale(1.03);
 }
 #most{
-  background-color: rgb(200, 221, 214);
+  background-color: rgb(255, 255, 255);
 }
 .most-book{
   margin: 0 14px;
@@ -190,13 +175,14 @@ section h4{
 .most-book img{
   width: 100%;
   height: 20rem;
+  box-shadow: 6px 8px 0 rgb(149, 149, 149);
   transition: 0.4s;
 }
 .most-book img:hover{
   transform: translate(0, 10px);
 }
 .blogs{
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(233, 233, 233);
 }
 .blogs img{
   width: 100%;
@@ -264,7 +250,7 @@ section h4{
 /*_________________________________________single book page_______________________________________________________*/
 .singlebook{
   width: 100%;
-  background-color: #e5dcf3;
+  background-color: #ffffff;
 }
 .singlebook h4{
   font-size: 24px;
@@ -337,7 +323,7 @@ h5 .rev-star{
   color: rgb(255, 255, 255);
 }
 #latest{
-  background-color: rgb(206, 197, 197);
+  background-color: rgb(236, 236, 236);
 }
 .latest-book{
   margin: 0 14px;
@@ -345,34 +331,36 @@ h5 .rev-star{
 .latest-book img{
   width: 100%;
   height: 20rem;
+  box-shadow: 6px 8px 0 rgb(149, 149, 149);
   transition: 0.4s;
 }
 .latest-book img:hover{
   transform: translate(0, 10px);
 }
-/*_________________________________________books by genre_______________________________________________________*/
-.books_genre{
+/*_________________________________________books by topics_______________________________________________________*/
+.books_topic{
   width: 100%;
-  background-color: #ddfffc;
+  background-color: #ffffff;
 }
-.books_genre .book{
+.books_topic .book{
   margin-top: 20px;
   text-align: center;
 }
-.books_genre .book img{
+.books_topic .book img{
   width: 100%;
   height: 16rem;
   transition: 0.5s;
+  box-shadow: 5px 6px 0 gray;
 }
-.books_genre .book img:hover{
+.books_topic .book img:hover{
   transform: scale(1.05);
 }
-.books_genre .book h6{
+.books_topic .book h6{
   font-size: 16px;
   margin-top: 10px;
   color:rgb(71, 71, 71);
 }
-.books_genre .book h5{
+.books_topic .book h5{
   font-size: 20px;
   margin-top: 10px;
   color:rgb(31, 33, 46);

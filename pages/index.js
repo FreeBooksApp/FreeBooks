@@ -57,89 +57,19 @@ function Home() {
             </div>
          </section>
 
-         <section id="genre">
+         <section className="topics">
             <div className="comporter">
-               <h4>Browse Books by Genre</h4>
+               <h4>Browse Books by Topic</h4>
                <hr />
-               <div className="owl-carousel owl-theme">
-                  <div className="item py-3">
-                     <div className="genre-card">
-                        <a href="#"><img src="images/romanse.png" alt="book" className="img-fluid" /></a>
-                        <div className="card-footer text-center">
-                           <h2>romance</h2>
-                        </div>
+               <div className="row">
+                  <div className="col-lg-2 mt-2">
+                     <div className="topic_card">
+                        <h4>romance</h4>
                      </div>
                   </div>
-                  <div className="item py-3">
-                     <div className="genre-card">
-                        <a href="#"><img src="images/adventure.png" alt="book" className="img-fluid" /></a>
-                        <div className="card-footer text-center">
-                           <h2>action & adventure</h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="item py-3">
-                     <div className="genre-card">
-                        <a href="#"><img src="images/action.png" alt="book" className="img-fluid" /></a>
-                        <div className="card-footer text-center">
-                           <h2>mystery & thriller</h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="item py-3">
-                     <div className="genre-card">
-                        <a href="#"><img src="images/bio.png" alt="book" className="img-fluid" /></a>
-                        <div className="card-footer text-center">
-                           <h2>biography & history</h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="item py-3">
-                     <div className="genre-card">
-                        <a href="#"><img src="images/children.png" alt="book" className="img-fluid" /></a>
-                        <div className="card-footer text-center">
-                           <h2>children</h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="item py-3">
-                     <div className="genre-card">
-                        <a href="#"><img src="images/fantasy.png" alt="book" className="img-fluid" /></a>
-                        <div className="card-footer text-center">
-                           <h2>fantasy</h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="item py-3">
-                     <div className="genre-card">
-                        <a href="#"><img src="images/historical.png" alt="book" className="img-fluid" /></a>
-                        <div className="card-footer text-center">
-                           <h2>historical</h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="item py-3">
-                     <div className="genre-card">
-                        <a href="#"><img src="images/horror.png" alt="book" className="img-fluid" /></a>
-                        <div className="card-footer text-center">
-                           <h2>horror</h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="item py-3">
-                     <div className="genre-card">
-                        <a href="#"><img src="images/literary.png" alt="book" className="img-fluid" /></a>
-                        <div className="card-footer text-center">
-                           <h2>literary</h2>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="item py-3">
-                     <div className="genre-card">
-                        <a href="#"><img src="images/science.png" alt="book" className="img-fluid" /></a>
-                        <div className="card-footer text-center">
-                           <h2>science</h2>
-                        </div>
+                  <div className="col-lg-2 mt-2">
+                     <div className="topic_card">
+                        <h4>romance</h4>
                      </div>
                   </div>
                </div>

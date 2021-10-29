@@ -1,7 +1,7 @@
 const BooksGenre = () => {
     return (
         <main>
-            <section className="books_genre">
+            <section className="books_topic">
                 <div className="comporter">
                     <h4 className="pt-3">Historical Genre</h4>
                     <hr />
