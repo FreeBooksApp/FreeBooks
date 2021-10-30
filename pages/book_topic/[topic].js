@@ -3,7 +3,7 @@ const BooksGenre = () => {
         <main>
             <section className="books_topic">
                 <div className="comporter">
-                    <h4 className="pt-3">Historical Genre</h4>
+                    <h4 className="pt-3">Historical Topic</h4>
                     <hr />
                     <div className="row">
                         <div className="book col-lg-2 col-md-3 col-sm-6">

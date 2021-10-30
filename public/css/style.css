@@ -113,20 +113,39 @@ section h4{
 .next-book img:hover{
   box-shadow: 0 26px 30px rgb(144, 197, 180);
 }
-.topics{
+#topics{
   background-color: rgb(235, 235, 235);
   padding-bottom: 20px;
 }
 .topic_card{
-  background-color: rgb(96, 40, 185);
-  padding: 5px 20px;
-  border: 1px solid rgb(23, 2, 82);
-  border-radius: 5px;
+  text-align: center;
+  background-color: rgb(110, 96, 192);
+  padding: 7px 10px;
+  border-radius: 4px;
+  transition: 0.4s;
+  margin: 10px 5px;
+  box-shadow: 2px 4px 12px solid rgb(27, 26, 26);
+}
+.filter_btn{
+  font-size: 18px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  padding: 5px 10px;
+  color:rgb(46, 46, 46);
+  border: none;
+  background-color: transparent;
 }
 .topic_card h4{
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 200;
-  color:rgb(228, 228, 228);
+}
+.topic_card h4 a:link, 
+.topic_card h4 a:visited{
+  text-decoration: none;
+  color: rgb(255, 218, 11);
+  transition: 0.4s;
+} 
+.topic_card h4 a:hover{
+  color: rgb(255, 255, 255);
 }
 .random{
   background-color: rgb(255, 255, 255);

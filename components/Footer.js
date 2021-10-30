@@ -12,7 +12,7 @@ const Footer = () => {
                             <h4>Don’t miss news from Grand Central Publishing</h4>
                             <form>
                                 <input type="text" className="subscribe" placeholder="Email"/>
-                                <button type="submit" class="subscribe-btn">Subscribe</button>
+                                <button type="submit" className="subscribe-btn">Subscribe</button>
                             </form>
                         </div>
                         <div className="col-lg-2 col-12">
@@ -34,10 +34,9 @@ const Footer = () => {
                 </div>
             </footer>
             <div className="copyright text-center bg-dark text-light py-2">
-                <p className="">&copy;copyrights 2021. Design by <a href="#" class="color-second">FreeBooks</a> all rights reserved.</p>
+                <p className="">&copy;copyrights 2021. Design by <a href="#" className="color-second">FreeBooks</a> all rights reserved.</p>
             </div>
             <script type="text/javascript" src="/js/jquery.min.js"></script>
-            <script type="text/javascript" src="/js/popper.min.js"></script>
             <script type="text/javascript" src="/js/popper.min.js"></script>
             <script src="/js/owl.carousel.min.js"></script>
             <script src="/js/isotope.pkgd.min.js"></script>
