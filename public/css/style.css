@@ -372,7 +372,7 @@ h5 .rev-star{
   background-color: rgb(236, 236, 236);
 }
 .latest-book{
-  margin: 0 14px;
+  margin: 10px 14px;
 }
 .latest-book img{
   width: 100%;
@@ -381,7 +381,7 @@ h5 .rev-star{
   transition: 0.4s;
 }
 .latest-book img:hover{
-  transform: translate(0, 10px);
+  transform: translate(0, -10px);
 }
 /*_________________________________________books by topics_______________________________________________________*/
 .books_topic{
