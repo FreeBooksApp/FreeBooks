@@ -1,93 +1,120 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none !important;
-  }
-  /*________________________________________Main Header__________________________________________________*/
-  #header{
-    background-color: rgb(91, 101, 165);
-  }
-  .strip p{
-    font-size: 12px;
-    margin: 0;
-    color:rgb(70, 70, 70);
-  }
-  nav.navbar-expand-lg{
-    padding: 0 16px;
-  } 
-  nav ul li{
-    margin: 0 16px;
-  }
-  nav.navbar-expand-lg ul li a:link,
-  nav ul li a:visited{
-    font-size: 18px;
-    color:rgba(249, 250, 250, 0.924);
-    font-weight: 100;
-    transition: 0.4s;
-  }
-  nav.navbar-expand-lg ul li a:hover,
-  nav ul li a:active{
-    color:rgb(255, 255, 255);
-    transform: scale(1.1);
-  }
-  .banner{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    background-image: url('../images/banner.jpg');
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-  }
-  .banner h1{
-    font-size: 60pt;
-    color:rgb(238, 238, 238);
-    padding: 0 20px;
-    text-shadow: 0 2px 5px rgb(20, 20, 20);
-  }
-  .banner p{
-    font-size: 20px;
-    font-family: system-ui;
-    color: rgb(255, 255, 255);
-    margin-top: 10px;
-    line-height: 30px;
-    text-shadow: 0 3px 8px rgb(20, 20, 20);
-  }
-  .search-bar{
-    margin-top: 10px;
-  }
-  .search{
-    width: 320px;
-    font-size: 18px;
-    color:rgb(146, 146, 146);
-    background-color: #fff;
-    border: 1px solid rgb(109, 109, 109);
-    border-right: none;
-    padding: 8px 16px;
-    border-top-left-radius: 20px;
-    transition: all 0.4s;
-  }
-  .search::placeholder{
-    color:rgb(167, 167, 167);
-  }
-  .btn-search{
-    right: 15px;
-    color:rgb(255, 255, 255);
-    background-color: rgb(91, 101, 165);
-    font-size: 18px;
-    padding: 8px 16px;
-    border: 1px solid rgb(109, 109, 109);
-    border-left: none;
-    border-bottom-right-radius: 20px;
-    transition: background-color 0.4s;
-  }
-  .btn-search:hover{
-    background-color: rgb(123, 128, 167);
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none !important;
+}
+/*________________________________________Main Header__________________________________________________*/
+#header{
+  background-color: rgb(91, 101, 165);
+}
+.strip p{
+  font-size: 12px;
+  margin: 0;
+  color:rgb(70, 70, 70);
+}
+nav.navbar-expand-lg{
+  padding: 0 16px;
+} 
+nav ul li{
+  margin: 0 16px;
+}
+nav.navbar-expand-lg ul li a:link,
+nav.navbar-expand-lg ul li a:visited{
+  font-size: 18px;
+  color:rgba(249, 250, 250, 0.924);
+  font-weight: 100;
+  transition: 0.4s;
+}
+nav.navbar-expand-lg ul li a:hover,
+nav.navbar-expand-lg ul li a:active{
+  color:rgb(255, 251, 0);
+  transform: scale(1.1);
+}
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  background-image: url('../images/banner.jpg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.banner h1{
+  font-size: 60pt;
+  color:rgb(238, 238, 238);
+  padding: 0 20px;
+  text-shadow: 0 2px 5px rgb(20, 20, 20);
+}
+.banner p{
+  font-size: 20px;
+  font-family: system-ui;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  line-height: 30px;
+  text-shadow: 0 3px 8px rgb(20, 20, 20);
+}
+.search-bar{
+  margin-top: 10px;
+}
+.search{
+  width: 320px;
+  font-size: 18px;
+  color:rgb(146, 146, 146);
+  background-color: #fff;
+  border: 1px solid rgb(109, 109, 109);
+  border-right: none;
+  padding: 8px 16px;
+  border-top-left-radius: 20px;
+  transition: all 0.4s;
+}
+.search::placeholder{
+  color:rgb(167, 167, 167);
+}
+.btn-search{
+  right: 15px;
+  color:rgb(255, 255, 255);
+  background-color: rgb(91, 101, 165);
+  font-size: 18px;
+  padding: 8px 16px;
+  border: 1px solid rgb(109, 109, 109);
+  border-left: none;
+  border-bottom-right-radius: 20px;
+  transition: background-color 0.4s;
+}
+.btn-search:hover{
+  background-color: rgb(123, 128, 167);
+}
+/*______________________________________________slide out menu_________________________________________________________*/
+#menu_btn{
+  border: none;
+  background-color: transparent;
+  display: none;
+}
+.slide_out_menu{
+  position: fexid;
+  width: 100%;
+  background-color: rgb(91, 101, 165);
+  margin: 0;
+  display: none;
+}
+.slide_out_menu nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide_out_menu nav ul{
+  text-align: center;
+  list-style: none;
+  margin: 0;
+}
+.slide_out_menu nav li{
+  margin: 20px 0;
+}
+
 /*______________________________________________sections_________________________________________________________*/
 section{
   width: 100%;
@@ -189,7 +216,7 @@ section h4{
   background-color: rgb(255, 255, 255);
 }
 .most-book{
-  margin: 0 14px;
+  margin: 10px 14px;
 }
 .most-book img{
   width: 100%;
@@ -198,7 +225,7 @@ section h4{
   transition: 0.4s;
 }
 .most-book img:hover{
-  transform: translate(0, 10px);
+  transform: translate(0, -10px);
 }
 .blogs{
   background-color: rgb(233, 233, 233);
@@ -457,6 +484,9 @@ footer h4{
     width: 8rem;
     padding: 8px 16px;
     margin-right: 10px;
+  }
+  #menu_btn{
+    display: block;
   }
 
 }

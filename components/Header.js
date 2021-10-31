@@ -27,13 +27,11 @@ const Header = () => {
                     <a href="#" className="navbar-brand text-info">
                         <Image src="/images/logo.png" width="40" height="40" />
                     </a>
+                    <button id="menu_btn"><img src="/images/menu.png" /></button>
                     <div className="collapse navbar-collapse" id="afg">
                         <ul className="navbar-nav m-auto">
                             <li className="navbar-item">
                                 <a className="nav-link active" href="#">HOME</a>
-                            </li>
-                            <li className="navbar-item">
-                                <a className="nav-link" href="#">PRODUCTS</a>
                             </li>
                             <li className="navbar-item">
                                 <a className="nav-link" href="#">AUTHORS</a>
@@ -48,6 +46,24 @@ const Header = () => {
                     </div>
                 </nav>
             </header>
+            <div className="slide_out_menu">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">HOME</a>
+                        </li>
+                        <li>
+                            <a href="#">AUTHORS</a>
+                        </li>
+                        <li>
+                            <a href="#">ABOUT</a>
+                        </li>
+                        <li>
+                            <a href="#">CONTACTS</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </>
     );
 }
