@@ -1,4 +1,7 @@
-function Home() {
+
+function Home({ books }) {
+
+   console.log(books)
    return (
       <main id="main-site">
          <section id="banner-area">
@@ -17,42 +20,19 @@ function Home() {
                <h4>Discover Your Next Book</h4>
                <hr />
                <div className="owl-carousel owl-theme">
-                  <div className="item py-2">
-                     <div className="next-book">
-                        <a href="#"><img src="images/book1.jpg" alt="book" className="img-fluid" /></a>
-                        <div className="text-center pt-2">
-                           <h6>Daniel Trejo</h6>
-                           <h5>History of Europe</h5>
+                  {
+                     books.map(book => (
+                        <div className="item py-2" key={book.id}>
+                           <div className="next-book">
+                              <a href={`/single_book/${book.id}`}><img src={`https://library.lol${book.cover}`} alt="book" className="img-fluid" /></a>
+                              <div className="text-center pt-2">
+                                 <h6>{book.author}</h6>
+                                 <h5>{book.title}</h5>
+                              </div>
+                           </div>
                         </div>
-                     </div>
-                  </div>
-                  <div className="item py-2">
-                     <div className="next-book">
-                        <a href="#"><img src="images/book2.jpg" alt="book" className="img-fluid" /></a>
-                        <div className="text-center pt-2">
-                           <h6>Daniel Trejo</h6>
-                           <h5>History of Europe</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="item py-2">
-                     <div className="next-book">
-                        <a href="#"><img src="images/book3.jpg" alt="book" className="img-fluid" /></a>
-                        <div className="text-center pt-2">
-                           <h6>Daniel Trejo</h6>
-                           <h5>History of Europe</h5>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="item py-2">
-                     <div className="next-book">
-                        <a href="#"><img src="images/book4.jpg" alt="book" className="img-fluid" /></a>
-                        <div className="text-center pt-2">
-                           <h6>Daniel Trejo</h6>
-                           <h5>History of Europe</h5>
-                        </div>
-                     </div>
-                  </div>
+                     ))
+                  }
                </div>
             </div>
          </section>
@@ -395,3 +375,11 @@ function Home() {
 
 export default Home;
 
+export const getStaticProps = async () => {
+   const response = await fetch('https://freebooks-api.herokuapp.com/books');
+   const books = await response.json();
+
+   return {
+      props: { books }
+   }
+}
