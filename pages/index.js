@@ -24,7 +24,7 @@ function Home({ books }) {
                      books.map(book => (
                         <div className="item py-2" key={book.id}>
                            <div className="next-book">
-                              <a href={`/single_book/${book.id}`}><img src={`http://gen.lib.rus.ec/covers/0/411b9300a2f2094800e0e30d439c30fd-d.jpg`} alt="book" className="img-fluid" /></a>
+                           <a href={`/single_book/${book.id}`}><img src={`https://gen.lib.rus.ec${book.cover}`} alt="book" className="img-fluid" /></a>
                               <div className="text-center pt-2">
                                  <h6>{book.author}</h6>
                                  <h5>{book.title}</h5>
