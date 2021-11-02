@@ -4,6 +4,16 @@
   box-sizing: border-box;
   outline: none !important;
 }
+/*________________________________________colors classes__________________________________________________*/
+.blue{
+  color:rgb(78, 121, 200);
+}
+.red{
+  color:rgb(255, 89, 59);
+}
+.yellow{
+  color:rgb(255, 216, 87);
+}
 /*________________________________________Main Header__________________________________________________*/
 #header{
   background-color: rgb(91, 101, 165);
@@ -306,7 +316,7 @@ section h4{
   margin-top: 10px;
 }
 .singlebook h1{
-  font-size: 60pt; 
+  font-size: 50pt; 
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   color:rgb(40, 43, 68);
   margin-top: 20px;

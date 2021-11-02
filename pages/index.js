@@ -1,3 +1,4 @@
+import Link from 'next/link'
 
 function Home({ books }) {
 
@@ -24,7 +25,7 @@ function Home({ books }) {
                      books.map(book => (
                         <div className="item py-2" key={book.id}>
                            <div className="next-book">
-                           <a href={`/single_book/${book.id}`}><img src="" alt="book" className="img-fluid" /></a>
+                           <Link href={`/single_book/${book.id}`}><a><img src="" alt="book" className="img-fluid" /></a></Link>
                               <div className="text-center pt-2">
                                  <h6>{book.author}</h6>
                                  <h5>{book.title}</h5>

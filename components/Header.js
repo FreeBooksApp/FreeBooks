@@ -1,5 +1,8 @@
 import Head from "next/head";
-import Image from "next/image"
+import Image from "next/image";
+import Link from 'next/link';
+
+
 const Header = () => {
     return (
         <>
@@ -31,7 +34,7 @@ const Header = () => {
                     <div className="collapse navbar-collapse" id="afg">
                         <ul className="navbar-nav m-auto">
                             <li className="navbar-item">
-                                <a className="nav-link active" href="#">HOME</a>
+                                <Link href="/"><a className="nav-link active">HOME</a></Link>
                             </li>
                             <li className="navbar-item">
                                 <a className="nav-link" href="#">AUTHORS</a>
@@ -50,7 +53,7 @@ const Header = () => {
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">HOME</a>
+                            <Link href="/"><a>HOME</a></Link>
                         </li>
                         <li>
                             <a href="#">AUTHORS</a>

@@ -13,18 +13,15 @@ function singlebook({book}) {
                          <Image src="/images/book1.jpg" width="500" height="600" alt="single_book"/>
                          </div>
                          <div className="col-lg-6">
-                            <h4>Sasha peyton smith</h4>
-                            <h1>The witch haven</h1>
-                            <p>We work with our partners to streamline project plans that don’t 
-                            just deliver on product perfection, but also delivers on time – crucial
-                            to success in a highly competitive market where every day counts.
-                            We work with our partners to streamline project plans that don’t just deliver on product
-                            perfection, but also delivers on time.</p>
+                            <h4>{book.author}</h4>
+                            <h1>{book.title}</h1>
+                            <h5>Pages: <span className="red">{book.pages_count}</span></h5>
+                            <h5>Language: <span className="red">{book.language}</span></h5>
+                            <h5>Publisher: <span className="red">{book.publisher}</span></h5>
                             <h5>Downloads : <span className="dl-count">23434</span></h5>
                             <h5>Review : <span className="rev-star">*****</span></h5>
                             <div className="btn-group">
                                 <a href={`${book.url}`} className="download-btn">Free Download</a>
-                                <a href="#" className="read-btn">Read Online</a>
                             </div>
                          </div>
                     </div>
