@@ -1,7 +1,8 @@
 import React from 'react'
 import Image from 'next/image'
 
-function singlebook() {
+function singlebook({book}) {
+   console.log(book)
     return (
         <main>
             <section className="singlebook">
@@ -22,7 +23,7 @@ function singlebook() {
                             <h5>Downloads : <span className="dl-count">23434</span></h5>
                             <h5>Review : <span className="rev-star">*****</span></h5>
                             <div className="btn-group">
-                                <a href="#" className="download-btn">Free Download</a>
+                                <a href={`${book.url}`} className="download-btn">Free Download</a>
                                 <a href="#" className="read-btn">Read Online</a>
                             </div>
                          </div>
@@ -88,3 +89,15 @@ function singlebook() {
 }
 
 export default singlebook;
+
+export const getServerSideProps = async (context)=>{
+   const {params} = context;
+   const response = await fetch(`https://freebooks-api.herokuapp.com/books/${params.bookId}`);
+
+   const book = await response.json();
+
+   return {
+      props: {book}
+   }
+
+}

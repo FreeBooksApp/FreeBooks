@@ -24,7 +24,7 @@ function Home({ books }) {
                      books.map(book => (
                         <div className="item py-2" key={book.id}>
                            <div className="next-book">
-                           <a href={`/single_book/${book.id}`}><img src={`https://gen.lib.rus.ec${book.cover}`} alt="book" className="img-fluid" /></a>
+                           <a href={`/single_book/${book.id}`}><img src="" alt="book" className="img-fluid" /></a>
                               <div className="text-center pt-2">
                                  <h6>{book.author}</h6>
                                  <h5>{book.title}</h5>
@@ -55,167 +55,7 @@ function Home({ books }) {
                         </div>
                      </div>
                   </div>
-                  <div className="grid-item Action">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Action</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Triller">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Triller</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Romance">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Romance</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Action">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Action</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Triller">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Triller</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Romance">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Romance</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Action">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Action</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Triller">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Triller</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Romance">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Romance</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Action">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Action</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Triller">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Triller</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Romance">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Romance</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Action">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Action</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Triller">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Triller</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Romance">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Romance</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Action">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Action</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Triller">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Triller</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Romance">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Romance</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Action">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Action</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Triller">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Triller</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Romance">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Romance</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Action">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Action</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  <div className="grid-item Triller">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Triller</a></h4>
-                        </div>
-                     </div>
-                  </div>
+                  
                </div>
             </div>
          </section>
@@ -375,7 +215,7 @@ function Home({ books }) {
 
 export default Home;
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
    const response = await fetch('https://freebooks-api.herokuapp.com/books');
    const books = await response.json();
 
