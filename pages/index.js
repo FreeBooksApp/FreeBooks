@@ -41,23 +41,7 @@ function Home({ books }) {
          <section id="topics">
             <div className="comporter">
                <h4>Browse Books by Topic</h4>
-               <div id="filter" className="button-group text-right">
-                  <button className="filter_btn is-cheched" data-filter="*">All Topics</button>
-                  <button className="filter_btn" data-filter=".Romance">romance</button>
-                  <button className="filter_btn" data-filter=".Action">action</button>
-                  <button className="filter_btn" data-filter=".Triller">triller</button>
-               </div>
-               <hr />
-               <div className="grid">
-                  <div className="grid-item Romance">
-                     <div className="item py-2">
-                        <div className="topic_card">
-                           <h4><a href="#">Romance</a></h4>
-                        </div>
-                     </div>
-                  </div>
-                  
-               </div>
+               
             </div>
          </section>
 
@@ -209,7 +193,6 @@ function Home({ books }) {
                </div>
             </div>
          </section>
-
       </main>
    )
 }

@@ -21,7 +21,7 @@ function singlebook({book}) {
                             <h5>Downloads : <span className="dl-count">23434</span></h5>
                             <h5>Review : <span className="rev-star">*****</span></h5>
                             <div className="btn-group">
-                                <a href={`${book.url}`} className="download-btn">Free Download</a>
+                                <a href={book.url} className="download-btn">Free Download</a>
                             </div>
                          </div>
                     </div>
